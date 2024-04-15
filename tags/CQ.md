@@ -1,0 +1,2 @@
+- [ ]  Create an installable version with compatible async libraries to replace blocking builtins [CQ_0001](../changelog/14-04-24.md)
+- [ ]  Use Protocols as function arguments [CQ_0002](../changelog/14-04-24.md)

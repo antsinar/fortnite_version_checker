@@ -1,0 +1,2 @@
+- [ ]  urllib.request fetches only the top 3 articles [BUG_0001](../changelog/14-04-24.md)
+- [ ]  if list of post labels inside the Reddit Parser is empty (not posts found with this tag) it will raise an out-of-bounds related exception [BUG_0002](../changelog/14-04-24.md)
