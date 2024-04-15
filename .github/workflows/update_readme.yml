@@ -17,7 +17,7 @@ jobs:
           python-version: "3.12"
 
       - name: Run update readme script
-        run: python update_readme_on_push.py
+        run: python3 update_readme_on_push.py
 
       - name: Run tag dumping script
-        run: python dump_tags_on_push.py
+        run: python3 dump_tags_on_push.py

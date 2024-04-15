@@ -13,7 +13,7 @@ def find_latest_changelog_file(starting_dir: Path = Path("changelog")) -> Path |
         ]
     )
     most_recent = most_recent.strftime("%d-%m-%y")
-    return Path(f"./changelog/{most_recent}.md")
+    return Path(f"./changelog/{most_recent}.md").absolute()
 
 
 def stream_changelog_file(file: Path) -> Generator[str, None, None]:

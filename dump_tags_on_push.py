@@ -39,7 +39,7 @@ def main() -> None:
     }
 
     # parse changelog files
-    changelog_files = [f for f in Path("changelog").iterdir() if f.is_file()]
+    changelog_files = [f.absolute() for f in Path("changelog").iterdir() if f.is_file()]
     for file in changelog_files:
         with open(file, "r") as f:
             for line in f.readlines():
