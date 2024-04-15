@@ -3,6 +3,7 @@
 <!-- Badges Here -->
 
 <!-- Project Description Here -->
+> View open issues in the tags directory  
 
 <!-- Project changelog append here -->
 ## 14-04-24 Barebones Version 
