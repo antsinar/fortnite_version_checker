@@ -12,6 +12,5 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: |
-          python update_readme_on_push.py
-          python dump_tags_on_push.py
+      - run: python update_readme_on_push.py
+      - run: python dump_tags_on_push.py
