@@ -1,4 +1,4 @@
-name: Update Readme file
+name: Automatic changelog procedures
 
 on:
   push:
@@ -8,9 +8,16 @@ jobs:
   run-script:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: python update_readme_on_push.py
-      - run: python dump_tags_on_push.py
+
+      - name: Run update readme script
+        run: python update_readme_on_push.py
+
+      - name: Run tag dumping script
+        run: python dump_tags_on_push.py
